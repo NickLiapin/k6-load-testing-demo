@@ -1,0 +1,22 @@
+{
+  "name": "k6-load-testing-demo",
+  "version": "1.0.0",
+  "description": "Load & performance testing with k6 against a bundled local service - smoke and ramping-load profiles with SLA thresholds, runs hermetically in CI.",
+  "scripts": {
+    "start": "node server/index.js",
+    "smoke": "k6 run scripts/smoke.js",
+    "load": "k6 run scripts/load.js"
+  },
+  "keywords": [
+    "k6",
+    "load-testing",
+    "performance-testing",
+    "qa-automation",
+    "ci"
+  ],
+  "author": "Nick Liapin",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
